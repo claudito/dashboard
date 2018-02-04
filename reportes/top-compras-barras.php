@@ -1,23 +1,14 @@
 <?php include'../autoload.php'; ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Top Compras Barras</title>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-</head>
-<body>
-<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
 
+<div id="container_barras"></div>
 
 <script>
-Highcharts.chart('container', {
+Highcharts.chart('container_barras', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'World\'s largest cities per 2014'
+        text: 'Top 5 de Proveedores con mas Compras'
     },
     subtitle: {
         text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
@@ -78,5 +69,3 @@ Highcharts.chart('container', {
     }]
 });
 </script>
-</body>
-</html>
